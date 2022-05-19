@@ -1,16 +1,14 @@
 .App {
   text-align: center;
-  font-family: 'Bangers', cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4abff18f-4195-4949-92c3-5584509bb517/d22y32b-66f5f86a-6064-41e7-9093-99ea443ad12d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRhYmZmMThmLTQxOTUtNDk0OS05MmMzLTU1ODQ1MDliYjUxN1wvZDIyeTMyYi02NmY1Zjg2YS02MDY0LTQxZTctOTA5My05OWVhNDQzYWQxMmQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CtmPrx8o__raiAVfWvPVefAb8zUCsTF0tPH1ufBH9KI');
-  width: 100vw;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  background-image: url('https://i.ibb.co/tMkNr1s/character-select.png');
+  background-size: 1450px 800px;
+  background-repeat: no-repeat;
+  /* width: 300px;
+  height: 300px; */
 }
