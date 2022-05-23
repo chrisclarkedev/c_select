@@ -4,14 +4,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <h1>Hello World</h1> */}
-        <audio
-          src="./sounds/character_select.mp3"
-          id="audio"
-          loop="loop"
-          autoplay="autoplay"
-        ></audio>
+        <button>Click ME!</button>
       </header>
+      <body>
+        {/* <audio autoplay loop>
+          <source src="./sounds/character_select.mp3" type="audio/mpeg" />
+        </audio> */}
+      </body>
     </div>
   );
 }
