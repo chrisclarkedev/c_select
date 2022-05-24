@@ -1,18 +1,46 @@
 import React from 'react';
 import './App.css';
-import tester from './components/sounds/japan.wav';
-import tester2 from './components/sounds/perfect.wav';
+import stage1 from './components/sounds/ussr.wav';
+import stage2 from './components/sounds/china.wav';
+import stage3 from './components/sounds/japan.wav';
+import stage4 from './components/sounds/usa.wav';
+import stage5 from './components/sounds/india.wav';
+import stage6 from './components/sounds/japan.wav';
+import stage7 from './components/sounds/usa.wav';
 
 function App() {
-  const audio = new Audio(tester);
-  const audio2 = new Audio(tester2);
+  //Audio for Body Section Of Page (STAGE LOCATIONS) left -> right
 
-  const start = () => {
+  const audio = new Audio(stage1);
+  const audio2 = new Audio(stage2);
+  const audio3 = new Audio(stage3);
+  const audio4 = new Audio(stage4);
+  const audio5 = new Audio(stage5);
+  const audio6 = new Audio(stage6);
+  const audio7 = new Audio(stge7);
+
+  const ussr = () => {
     audio.play();
   };
 
-  const start2 = () => {
+  const china = () => {
     audio2.play();
+  };
+
+  const japan = () => {
+    audio3.play();
+  };
+
+  const usa = () => {
+    audio4.play();
+  };
+
+  const india = () => {
+    audio5.play();
+  };
+
+  const japan2 = () => {
+    audio6.play();
   };
 
   return (
@@ -22,12 +50,21 @@ function App() {
         {/* <audio autoplay loop>
           <source src="./sounds/character_select.mp3" type="audio/mpeg" />
         </audio> */}
-        <div></div>
+        {/* FIRST ROW */}
+        <div className="firstrow">
+          <button onClick={ussr}>USSR</button>
+          <button onClick={china}>China</button>
+          <button onClick={japan}>Japan</button>
+          <button onClick={usa}>USA</button>
+        </div>
+
+        {/* 2ND ROW */}
+        <div className="secondrow">
+          <button onClick={india}>India</button>
+          <button onClick={japan2}>Japan2</button>
+        </div>
       </body>
-      <footer>
-        <button onClick={start}>Play</button>
-        <button onClick={start2}>Play2</button>
-      </footer>
+      <footer></footer>
     </div>
   );
 }
