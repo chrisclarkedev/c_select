@@ -26,7 +26,9 @@ h1 {
   margin-left: 20px;
   cursor: pointer;
 } */
-
+.firstrow {
+  opacity: 0;
+}
 .firstrow .btn1 button {
   margin-top: 125px;
   margin-right: 550px;
@@ -44,11 +46,61 @@ h1 {
   cursor: pointer;
 }
 
-.btn3 button {
+.firstrow .btn3 button {
   position: relative;
   width: 6.5%;
   height: 48px;
   left: 98px;
   bottom: 88px;
+  cursor: pointer;
+}
+
+.firstrow .btn4 button {
+  position: relative;
+  width: 6.5%;
+  height: 48px;
+  left: 384px;
+  bottom: 186px;
+  cursor: pointer;
+}
+
+/* STYLING FOR SECOND ROW BUTTONS */
+.secondrow {
+  opacity: 0;
+}
+
+.secondrow .btn5 button {
+  position: relative;
+  width: 6.5%;
+  height: 48px;
+  right: 246px;
+  bottom: 70px;
+  cursor: pointer;
+}
+
+.secondrow .btn6 button {
+  position: relative;
+  width: 6.6%;
+  height: 48px;
+  left: 36px;
+  bottom: 103px;
+  cursor: pointer;
+}
+
+.secondrow .btn7 button {
+  position: relative;
+  width: 6.5%;
+  height: 49px;
+  left: 400px;
+  bottom: 211px;
+  cursor: pointer;
+}
+
+.secondrow .btn8 button {
+  position: relative;
+  width: 6.5%;
+  height: 49px;
+  left: 335px;
+  bottom: 130px;
   cursor: pointer;
 }

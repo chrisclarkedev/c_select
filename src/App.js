@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import character from './components/sounds/character_select.mp3';
 import stage1 from './components/sounds/ussr.wav';
 import stage2 from './components/sounds/china.wav';
 import stage3 from './components/sounds/japan.wav';
@@ -11,7 +12,7 @@ import stage8 from './components/sounds/brazil.wav';
 
 function App() {
   //Audio for Body Section Of Page (STAGE LOCATIONS) left -> right
-
+  const audioC = new Audio(character);
   const audio = new Audio(stage1);
   const audio2 = new Audio(stage2);
   const audio3 = new Audio(stage3);
@@ -20,6 +21,10 @@ function App() {
   const audio6 = new Audio(stage6);
   const audio7 = new Audio(stage7);
   const audio8 = new Audio(stage8);
+
+  const cS = () => {
+    audioC.play();
+  };
 
   const ussr = () => {
     audio.play();
@@ -55,11 +60,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">{/* <button>Click ME!</button> */}</header>
+      <header className="App-header"></header>
       <body>
         {/* <audio autoplay loop>
           <source src="./sounds/character_select.mp3" type="audio/mpeg" />
         </audio> */}
+        {/* <button onClick={cS}>Character Select</button> */}
         {/* FIRST ROW */}
         <div className="firstrow">
           <div className="btn1">
@@ -68,19 +74,29 @@ function App() {
           <div className="btn2">
             <button onClick={china}>China</button>
           </div>
-        </div>
-        <div className="btn3">
-          <button onClick={japan}>Japan</button>
+          <div className="btn3">
+            <button onClick={japan}>Japan</button>
+          </div>
+          <div className="btn4">
+            <button onClick={usa}>USA</button>
+          </div>
         </div>
 
-        {/* <button onClick={usa}>USA</button> */}
         {/* 2ND ROW */}
-        {/* <div className="secondrow">
-          <button onClick={india}>India</button>
-          <button onClick={japan2}>Japan2</button>
+        <div className="secondrow">
+          <div className="btn5">
+            <button onClick={india}>India</button>
+          </div>
+          <div className="btn6">
+            <button onClick={japan2}>Japan2</button>
+          </div>
+          <div className="btn7">
+            <button onClick={usa2}>USA2</button>
+          </div>
+          <div className="btn8">
+            <button onClick={brazil}>Brazil</button>
+          </div>
         </div>
-        <button onClick={usa2}>USA2</button>
-        <button onClick={brazil}>Brazil</button> */}
       </body>
       <footer></footer>
     </div>
