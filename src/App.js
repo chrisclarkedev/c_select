@@ -68,6 +68,8 @@ function App() {
           <div className="btn2">
             <button onClick={china}>China</button>
           </div>
+        </div>
+        <div className="btn3">
           <button onClick={japan}>Japan</button>
         </div>
 
