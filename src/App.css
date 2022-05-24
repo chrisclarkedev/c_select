@@ -16,3 +16,21 @@ body {
 h1 {
   color: yellow;
 }
+
+/* STYLING FOR FIRST ROW BUTTONS */
+/* .firstrow button {
+  color: purple;
+  margin-top: 150px;
+  justify-content: space-between;
+  margin-right: 80px;
+  margin-left: 20px;
+  cursor: pointer;
+} */
+
+.btn1 button {
+  margin-top: 125px;
+  margin-right: 550px;
+  width: 7%;
+  height: 50px;
+  cursor: pointer;
+}
