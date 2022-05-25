@@ -11,8 +11,8 @@ import stage7 from './components/sounds/usa.wav';
 import stage8 from './components/sounds/brazil.wav';
 import cryu from './components/sounds/ryu_hadouken.wav';
 import chonda from './components/sounds/honda.wav';
-// import cblanka from './components/sounds/blanka.wav';
-// import cguile from './components/sounds/guile.wav';
+import cblanka from './components/sounds/blanka.wav';
+import cguile from './components/sounds/guile.wav';
 
 function App() {
   //Audio for Body Section Of Page (STAGE LOCATIONS) left -> right
@@ -29,8 +29,8 @@ function App() {
   //Audio for Character Select (2 ROWS) Rleft -> right
   const audioC1 = new Audio(cryu);
   const audioC2 = new Audio(chonda);
-  // const audioC3 = new Audio(cblanka);
-  // const audioC4 = new Audio(cguile);
+  const audioC3 = new Audio(cblanka);
+  const audioC4 = new Audio(cguile);
 
   const cS = () => {
     audioC.play();
@@ -77,13 +77,13 @@ function App() {
     audioC2.play();
   };
 
-  // const blanka = () => {
-  //   audioC3.play();
-  // };
+  const blanka = () => {
+    audioC3.play();
+  };
 
-  // const guile = () => {
-  //   audioC4.play();
-  // };
+  const guile = () => {
+    audioC4.play();
+  };
 
   return (
     <div className="App">
@@ -92,12 +92,12 @@ function App() {
         {/* <audio autoplay loop>
           <source src="./sounds/character_select.mp3" type="audio/mpeg" />
         </audio> */}
-        <div className="cS">
-          <button onClick={cS}>Character Select</button>
-        </div>
 
         {/* FIRST ROW */}
         <div className="firstrow">
+          <div className="cS">
+            <button onClick={cS}>Character Select</button>
+          </div>
           <div className="btn1">
             <button onClick={ussr}>USSR</button>
           </div>
@@ -136,14 +136,13 @@ function App() {
           <div className="hondabtn">
             <button onClick={honda}>Honda</button>
           </div>
-        </div>
-
-        {/* <div className="blankabtn">
+          <div className="blankabtn">
             <button onClick={blanka}>Blanka</button>
           </div>
           <div className="guilebtn">
             <button onClick={guile}>Guile</button>
-          </div> */}
+          </div>
+        </div>
       </body>
       <footer></footer>
     </div>

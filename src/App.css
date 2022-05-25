@@ -19,14 +19,14 @@ h1 {
 
 /* STYLING FOR CHARACTER SELECT BUTTON */
 
-body .cS button {
+/* body .cS button {
   position: static;
   width: 35%;
   height: 40px;
   margin-top: 18px;
   cursor: pointer;
   opacity: 0;
-}
+} */
 
 /* STYLING FOR FIRST ROW BUTTONS */
 /* .firstrow button {
@@ -40,9 +40,18 @@ body .cS button {
 .firstrow {
   opacity: 0;
 }
+
+.firstrow .cS button {
+  position: relative;
+  top: 20px;
+  width: 33%;
+  height: 40px;
+  cursor: pointer;
+}
 .firstrow .btn1 button {
-  margin-top: 67px;
-  margin-right: 550px;
+  position: relative;
+  top: 80px;
+  right: 280px;
   width: 7%;
   height: 50px;
   cursor: pointer;
@@ -50,8 +59,8 @@ body .cS button {
 
 .firstrow .btn2 button {
   position: relative;
+  top: 35px;
   right: 70px;
-  bottom: 50px;
   height: 50px;
   width: 6.5%;
   cursor: pointer;
@@ -62,7 +71,7 @@ body .cS button {
   width: 6.5%;
   height: 48px;
   left: 98px;
-  bottom: 88px;
+  bottom: 2px;
   cursor: pointer;
 }
 
@@ -70,8 +79,8 @@ body .cS button {
   position: relative;
   width: 6.5%;
   height: 48px;
+  bottom: 100px;
   left: 384px;
-  bottom: 186px;
   cursor: pointer;
 }
 
@@ -85,7 +94,7 @@ body .cS button {
   width: 6.5%;
   height: 48px;
   right: 246px;
-  bottom: 70px;
+  top: 17px;
   cursor: pointer;
 }
 
@@ -94,7 +103,7 @@ body .cS button {
   width: 6.6%;
   height: 48px;
   left: 36px;
-  bottom: 103px;
+  bottom: 18px;
   cursor: pointer;
 }
 
@@ -103,7 +112,7 @@ body .cS button {
   width: 6.5%;
   height: 49px;
   left: 400px;
-  bottom: 211px;
+  bottom: 125px;
   cursor: pointer;
 }
 
@@ -112,7 +121,7 @@ body .cS button {
   width: 6.5%;
   height: 49px;
   left: 335px;
-  bottom: 130px;
+  bottom: 46px;
   cursor: pointer;
 }
 
@@ -125,13 +134,32 @@ body .cS button {
   height: 108px;
   right: 177px;
   cursor: pointer;
+  top: 85px;
 }
 
 .cstop .hondabtn button {
   position: relative;
   width: 8%;
   height: 108px;
-  bottom: 107px;
+  bottom: 22px;
   right: 55px;
+  cursor: pointer;
+}
+
+.cstop .blankabtn button {
+  position: relative;
+  width: 7.9%;
+  height: 108px;
+  bottom: 130px;
+  left: 65px;
+  cursor: pointer;
+}
+
+.guilebtn button {
+  position: relative;
+  width: 8%;
+  height: 108px;
+  bottom: 239px;
+  left: 188px;
   cursor: pointer;
 }
