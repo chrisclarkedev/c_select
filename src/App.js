@@ -9,6 +9,10 @@ import stage5 from './components/sounds/india.wav';
 import stage6 from './components/sounds/japan.wav';
 import stage7 from './components/sounds/usa.wav';
 import stage8 from './components/sounds/brazil.wav';
+import cryu from './components/sounds/ryu_hadouken.wav';
+import chonda from './components/sounds/honda.wav';
+// import cblanka from './components/sounds/blanka.wav';
+// import cguile from './components/sounds/guile.wav';
 
 function App() {
   //Audio for Body Section Of Page (STAGE LOCATIONS) left -> right
@@ -21,6 +25,12 @@ function App() {
   const audio6 = new Audio(stage6);
   const audio7 = new Audio(stage7);
   const audio8 = new Audio(stage8);
+
+  //Audio for Character Select (2 ROWS) Rleft -> right
+  const audioC1 = new Audio(cryu);
+  const audioC2 = new Audio(chonda);
+  // const audioC3 = new Audio(cblanka);
+  // const audioC4 = new Audio(cguile);
 
   const cS = () => {
     audioC.play();
@@ -58,6 +68,23 @@ function App() {
     audio8.play();
   };
 
+  // CHARACTER SELECT
+  const ryu = () => {
+    audioC1.play();
+  };
+
+  const honda = () => {
+    audioC2.play();
+  };
+
+  // const blanka = () => {
+  //   audioC3.play();
+  // };
+
+  // const guile = () => {
+  //   audioC4.play();
+  // };
+
   return (
     <div className="App">
       <header className="App-header"></header>
@@ -65,7 +92,10 @@ function App() {
         {/* <audio autoplay loop>
           <source src="./sounds/character_select.mp3" type="audio/mpeg" />
         </audio> */}
-        {/* <button onClick={cS}>Character Select</button> */}
+        <div className="cS">
+          <button onClick={cS}>Character Select</button>
+        </div>
+
         {/* FIRST ROW */}
         <div className="firstrow">
           <div className="btn1">
@@ -97,6 +127,23 @@ function App() {
             <button onClick={brazil}>Brazil</button>
           </div>
         </div>
+        {/* CHARACTERS SELECT */}
+        {/* TOP ROW */}
+        <div className="cstop">
+          <div className="ryubtn">
+            <button onClick={ryu}>Ryu</button>
+          </div>
+          <div className="hondabtn">
+            <button onClick={honda}>Honda</button>
+          </div>
+        </div>
+
+        {/* <div className="blankabtn">
+            <button onClick={blanka}>Blanka</button>
+          </div>
+          <div className="guilebtn">
+            <button onClick={guile}>Guile</button>
+          </div> */}
       </body>
       <footer></footer>
     </div>
