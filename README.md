@@ -1,6 +1,6 @@
 # SFII - Soundboard
 
-![picture alt](https://i.ibb.co/tMkNr1s/character-select.png)
+![picture alt]('https://i.ibb.co/tMkNr1s/character-select.png')
 
 ## Description
 
