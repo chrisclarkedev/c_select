@@ -29,14 +29,7 @@ h1 {
 } */
 
 /* STYLING FOR FIRST ROW BUTTONS */
-/* .firstrow button {
-  color: purple;
-  margin-top: 150px;
-  justify-content: space-between;
-  margin-right: 80px;
-  margin-left: 20px;
-  cursor: pointer;
-} */
+
 .firstrow {
   /* opacity: 0; */
 }
@@ -130,7 +123,6 @@ h1 {
 
 .cstop {
   /* opacity: 0; */
-  /* box-sizing: border-box; */
 }
 
 .cstop .ryubtn button {
@@ -166,17 +158,44 @@ h1 {
   width: 7.8%;
   top: 515px;
   left: 850px;
-  display: block;
   cursor: pointer;
 }
 
 /* STYLING FOR CHARACTERS SELECT SCREEN 
  SECOND ROW */
 
-/* .kenbtn button {
-  position: relative;
-  width: 8%;
+.cbot .kenbtn button {
+  position: absolute;
   height: 108px;
-  bottom: 232px;
-  right: 175px;
-} */
+  width: 7.8%;
+  top: 630px;
+  left: 490px;
+  cursor: pointer;
+}
+
+.cbot .chunlibtn button {
+  position: absolute;
+  height: 108px;
+  width: 8%;
+  bottom: 50px;
+  left: 609px;
+  cursor: pointer;
+}
+
+.cbot .zangiefbtn button {
+  position: absolute;
+  height: 108px;
+  width: 7.8%;
+  top: 630px;
+  left: 730px;
+  cursor: pointer;
+}
+
+.cbot .dhalsimbtn button {
+  position: absolute;
+  height: 108px;
+  width: 7.8%;
+  top: 630px;
+  left: 850px;
+  cursor: pointer;
+}

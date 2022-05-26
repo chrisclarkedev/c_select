@@ -14,6 +14,10 @@ import chonda from './components/sounds/honda.wav';
 import cblanka from './components/sounds/blanka.wav';
 import cguile from './components/sounds/guile.wav';
 import cken from './components/sounds/ryu_tatsu.wav';
+import cchunli from './components/sounds/chunli.wav';
+import czangief from './components/sounds/zangief.wav';
+import cdhalsim from './components/sounds/dhalsim.wav';
+
 function App() {
   //Audio for Body Section Of Page (STAGE LOCATIONS) left -> right
   const audioC = new Audio(character);
@@ -32,6 +36,9 @@ function App() {
   const audioC3 = new Audio(cblanka);
   const audioC4 = new Audio(cguile);
   const audioC5 = new Audio(cken);
+  const audioC6 = new Audio(cchunli);
+  const audioC7 = new Audio(czangief);
+  const audioC8 = new Audio(cdhalsim);
 
   const cS = () => {
     audioC.play();
@@ -88,6 +95,18 @@ function App() {
 
   const ken = () => {
     audioC5.play();
+  };
+
+  const chunli = () => {
+    audioC6.play();
+  };
+
+  const zangief = () => {
+    audioC7.play();
+  };
+
+  const dhalsim = () => {
+    audioC8.play();
   };
 
   return (
@@ -148,12 +167,23 @@ function App() {
             <button onClick={guile}>Guile</button>
           </div>
         </div>
-        {/* <div className="cbot"></div>
-        <div className="kenbtn">
-          <button onClick={ken}>Ken</button>
-        </div> */}
       </body>
-      <footer></footer>
+      <footer>
+        <div className="cbot">
+          <div className="kenbtn">
+            <button onClick={ken}>Ken</button>
+          </div>
+          <div className="chunlibtn">
+            <button onClick={chunli}>Chunli</button>
+          </div>
+          <div className="zangiefbtn">
+            <button onClick={zangief}>Zangief</button>
+          </div>
+          <div className="dhalsimbtn">
+            <button onClick={dhalsim}>Dhalsim</button>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
