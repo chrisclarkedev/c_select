@@ -1,7 +1,7 @@
 # SFII - Soundboard
 
-![picture alt](https://i.ibb.co/tMkNr1s/character-select.png)
+![picture alt](https://i.ibb.co/SRzc97x/character-select-1-25.png)
 
 ## Description
 
-Web app that plays sound effect from the critically acclaimed 90's arcade classic Street Fighter II. Choose your favorite character and hear their iconic sound effects.
+Web app that plays sound effect from the critically acclaimed 90's arcade classic Street Fighter II. Choose your favorite character and or location on the world map to hear their iconic sound effects.
