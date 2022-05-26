@@ -13,7 +13,7 @@ import cryu from './components/sounds/ryu_hadouken.wav';
 import chonda from './components/sounds/honda.wav';
 import cblanka from './components/sounds/blanka.wav';
 import cguile from './components/sounds/guile.wav';
-
+import cken from './components/sounds/ryu_tatsu.wav';
 function App() {
   //Audio for Body Section Of Page (STAGE LOCATIONS) left -> right
   const audioC = new Audio(character);
@@ -31,6 +31,7 @@ function App() {
   const audioC2 = new Audio(chonda);
   const audioC3 = new Audio(cblanka);
   const audioC4 = new Audio(cguile);
+  const audioC5 = new Audio(cken);
 
   const cS = () => {
     audioC.play();
@@ -83,6 +84,10 @@ function App() {
 
   const guile = () => {
     audioC4.play();
+  };
+
+  const ken = () => {
+    audioC5.play();
   };
 
   return (
@@ -143,6 +148,10 @@ function App() {
             <button onClick={guile}>Guile</button>
           </div>
         </div>
+        {/* <div className="cbot"></div>
+        <div className="kenbtn">
+          <button onClick={ken}>Ken</button>
+        </div> */}
       </body>
       <footer></footer>
     </div>

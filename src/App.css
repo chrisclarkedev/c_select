@@ -38,7 +38,7 @@ h1 {
   cursor: pointer;
 } */
 .firstrow {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .firstrow .cS button {
@@ -86,7 +86,7 @@ h1 {
 
 /* STYLING FOR SECOND ROW BUTTONS */
 .secondrow {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .secondrow .btn5 button {
@@ -128,6 +128,11 @@ h1 {
 /* STYLING FOR CHARACTERS SELECT SCREEN 
  FIRST ROW */
 
+.cstop {
+  /* opacity: 0; */
+  /* box-sizing: border-box; */
+}
+
 .cstop .ryubtn button {
   position: relative;
   width: 8%;
@@ -155,11 +160,23 @@ h1 {
   cursor: pointer;
 }
 
-.guilebtn button {
+.cstop .guilebtn button {
+  position: absolute;
+  height: 108px;
+  width: 7.8%;
+  top: 515px;
+  left: 850px;
+  display: block;
+  cursor: pointer;
+}
+
+/* STYLING FOR CHARACTERS SELECT SCREEN 
+ SECOND ROW */
+
+/* .kenbtn button {
   position: relative;
   width: 8%;
   height: 108px;
-  bottom: 239px;
-  left: 188px;
-  cursor: pointer;
-}
+  bottom: 232px;
+  right: 175px;
+} */
