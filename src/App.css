@@ -206,3 +206,19 @@ h1 {
   left: 850px;
   cursor: pointer;
 }
+
+/* MEDIA QUERY */
+@media (max-height: 1450) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
