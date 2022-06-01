@@ -2,17 +2,19 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-image: url('https://i.ibb.co/HxBXZPT/character-select-3-1920x1080.png');
+  /* background: url('https://i.ibb.co/tMkNr1s/character-select.png'); */
+  /* //CHANGES */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-position: center; */
-  /* background: url('https://i.ibb.co/tMkNr1s/character-select.png'); */
-  /* background-size: 1450px 800px;
+  /* //ORIGNAL */
+  /* background-position: center;
+  background: url('https://i.ibb.co/tMkNr1s/character-select.png');
+  background-size: 1450px 800px;
   background-repeat: no-repeat; */
 }
 
@@ -34,7 +36,7 @@ h1 {
 /* STYLING FOR FIRST ROW BUTTONS */
 
 .firstrow {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .firstrow .cS button {
@@ -208,17 +210,49 @@ h1 {
 }
 
 /* MEDIA QUERY */
-@media (max-height: 1450) {
+/* @media (min-width: 930px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  } */
+
+/* STYLING FOR FIRST ROW BUTTONS */
+
+/* .firstrow {
+    opacity: 0;
+  } */
+/* .firstrow .btn1 button {
+    position: relative;
+    top: 128px;
+    right: 360px;
+    width: 6.5%;
+    height: 52px;
+    cursor: pointer;
+  } */
+
+/* .firstrow .btn1 button {
+    position: relative;
+    top: 128px;
+    right: 360px;
+    width: 6.5%;
+    height: 6px;
+    cursor: pointer;
+  }
+
+  .firstrow .btn2 button {
+    position: relative;
+    top: 70px;
+    right: 90px;
+    height: 60px;
+    width: 6.5%;
+    cursor: pointer;
+  }
+} */
+/* @media (max-width: 800px) {
   body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-}
-@media (max-width: 800px) {
-  body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
+} */
