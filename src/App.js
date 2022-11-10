@@ -118,21 +118,23 @@ function App() {
         </audio> */}
 
         {/* FIRST ROW */}
-        <div className="firstrow">
-          <div className="cS">
-            <button onClick={cS}>Character Select</button>
-          </div>
-          <div className="btn1">
-            <button onClick={ussr}>USSR</button>
-          </div>
-          <div className="btn2">
-            <button onClick={china}>China</button>
-          </div>
-          <div className="btn3">
-            <button onClick={japan}>Japan</button>
-          </div>
-          <div className="btn4">
-            <button onClick={usa}>USA</button>
+        <div id="container">
+          <div className="firstrow">
+            <div className="cS">
+              <button onClick={cS}>Character Select</button>
+            </div>
+            <div className="btn1">
+              <button onClick={ussr}>USSR</button>
+            </div>
+            <div className="btn2">
+              <button onClick={china}>China</button>
+            </div>
+            <div className="btn3">
+              <button onClick={japan}>Japan</button>
+            </div>
+            <div className="btn4">
+              <button onClick={usa}>USA</button>
+            </div>
           </div>
         </div>
 
@@ -168,6 +170,8 @@ function App() {
           </div>
         </div>
       </body>
+
+      {/* BOTTOM ROW */}
       <footer>
         <div className="cbot">
           <div className="kenbtn">
